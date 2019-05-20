@@ -69,7 +69,7 @@ func contains(slice []string, s string) bool {
 }
 
 func writeStringArrayToFile(filename string, strArray []string, perm os.FileMode) {
-	f, err := os.OpenFile(filename, os.O_CREATE|os.O_WRONLY, perm)
+	f, err := os.OpenFile(filename, os.O_CREATE|os.O_WRONLY|os.O_TRUNC, perm)
 	if err != nil {
 		log.Panic(err)
 	}
