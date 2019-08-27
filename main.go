@@ -24,6 +24,7 @@ func main() {
 	for _, file := range files {
 		if !re.MatchString(file) {
 			fmt.Println("WRONG FILENAME")
+			continue
 		}
 
 		if re.MatchString(file) {
