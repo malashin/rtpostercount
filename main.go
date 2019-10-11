@@ -34,9 +34,9 @@ func main() {
 		var s = "ERROR"
 		switch {
 		case contains(poster, resolution):
-			s = "\t\t\t\t\t\t1"
+			s = "\t\t\tПостеры\t\t\t1"
 		case contains(rescale, resolution):
-			s = "\t\t\t\t\t\t\t1"
+			s = "\t\t\tПостеры\t\t\t\t1"
 		}
 
 		output = append(output, file+s+"\n")
